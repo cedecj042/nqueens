@@ -169,14 +169,14 @@ tr:nth-child(even) td:nth-child(even){
     }
 
     .container {
-        height: 375px;
-        width: 375px;
+        height: 300px;
+        width: 300px;
     }
     
     .form {
         position: relative;
         z-index: 3;
         justify-content: center;
-        width: 375px;
+        width: 300px;
     }
 }
