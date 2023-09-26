@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Arvo;
+    src: url(Arvo-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    font-family: Arvo;
+    background-color: #b9d2e9;
+
+}
+
+.container {
+    height: 650px;
+    width: 650px;
+    border-radius: 50px;
+    background: #b9d2e9;
+    box-shadow: 41px 41px 58px #a7bdd2,
+        -41px -41px 58px #cce7ff;
+
+    display: flex;
+}
+
+.form {
+    height: 200px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.form h1 {
+    margin: 0 0;
+    color: #0e6b7f;
+}
+
+.form input {
+    height: 42px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.013);
+    background-color: rgba(255, 255, 255, 0.222);
+    outline: rgba(255, 255, 255, 0.013) solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    font-family: Arvo;
+}
+.form input:focus{
+    outline: #0e6b7f solid 1px;
+
+}
+
+.form button {
+    height: 42px;
+    width: 100%;
+    background-color: #28b1cf;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgba(27, 126, 192, 0.822);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.013);
+    cursor: pointer;
+    font-family: Arvo;
+}
+
+.form button:hover {
+
+    background-color: #37bfdd;
+    border: 1px solid rgb(40, 128, 187, 0.05);
+
+}
+
+.form button:active {
+
+    background-color: #20a7c5;
+    border: 1px solid rgb(40, 128, 187, 0.05);
+
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 30px;
+    gap: 10px;
+
+
+}
+
+tr {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    gap: 10px;
+
+}
+
+td {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,0.45);
+    border-radius: 50%;
+    background: #bbd3e9;
+    box-shadow:  10px 10px 24px #acc3d9,
+                 -10px -10px 24px #c6e1f9;
+}
+tr:nth-child(odd) td:nth-child(odd){
+    background-color: #a7c2db !important;
+
+}
+tr:nth-child(even) td:nth-child(even){
+    background: #a7c2db;
+
+}
+/* .dark {
+    border-radius: 50%;
+    background: #8cb4d9;
+    box-shadow: 20px 20px 32px #7ea2c3,
+        -20px -20px 32px #9ac6ef;
+} */
+.icon-queen{
+    background-image: url(chess-queen-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 4;
+    height: 25%;
+    width:25%;
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 601px) {
+    body {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .container {
+        height: 550px;
+        width: 550px;
+    }
+    
+    .form {
+        position: relative;
+        z-index: 3;
+        justify-content: center;
+        width: 550px;
+    }
+}
+@media screen and (max-width:600px) {
+    body {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .container {
+        height: 375px;
+        width: 375px;
+    }
+    
+    .form {
+        position: relative;
+        z-index: 3;
+        justify-content: center;
+        width: 375px;
+    }
+}
